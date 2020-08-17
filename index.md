@@ -1,36 +1,45 @@
-## Welcome to GitHub Pages
+by Alibek Utyubayev (alibek.ex at gmail.com)
+Analysis of factors that affect level of PM2.5 air pollution in the city of Almaty, Kazakhstan
 
-You can use the [editor on GitHub](https://github.com/alibekU/almaty_air_2020/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Description
+In this analysis I will try to answer 3 following questions regarding air pollution in Almaty for the period of 2017-2020:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. What factors can help us predict air pollution le    vels and thus can be possibly affecting it?
 
-### Markdown
+2. How does air quality deteriorate during the colder weather and heating seasons?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+3. How did city lock-down due to COVID-19, and decreased car traffic as a result of it, affect the air quality?
 
-```markdown
-Syntax highlighted code block
+The structure of the analysis is little bit different and it is oulined in the Jupyter notebook. The analysis includes data extraction, training and selecting the best model and other data analysis related aspects.
 
-# Header 1
-## Header 2
-### Header 3
+# Motivation
+In their City Development Strategy, Almaty city officials used to downplay the air pollution problem and the effect of heating pollution, while concentrating more on car traffic pollution. The situation has changed a bit after city activists created a petition to name air pollution as the city’s main challenge and demanded more actions in terms of decreasing pollution by power and heating plants. However, there still were some opinions attributing air quality improvement in April 2020 solely t     o the decrease in traffic. Thus, it is especially interesting to see the answer to the third question.
+I lived in a city for 7 months now, starting from December 2019, and have witnessed noticeable air pollution. The COVID-19 lockdown provided me with a good opportunity to see the effect of a traffic that was reduced almost by 80% by some estimates.
 
-- Bulleted
-- List
+# Summary of the analysis
+The summary for general audience that does not go deeply into the technical parts is available at my Linkedin page: https://www.linkedin.com/pulse/analysis-factors-including-lock-down-due-covid-19-affect-utyubayev/
 
-1. Numbered
-2. List
+# Files:
+1. analysis_pm25.ipynb - Jupyter notebook with the analysis
+2. daily_almaty_14apr20.xls - file with air pollution data from airkaz.org
+3. almaty_weather_201701_to_202006.xls - file with weather data from rp5.ru
 
-**Bold** and _Italic_ and `Code` text
+# Libraries used:
+SHAP
+Seaborn
+Matplotlib
+Pandas
+Numpy
+Sklearn
+Xgboost
+Copy
+Math
 
-[Link](url) and ![Image](src)
-```
+# Acknowledgements
+Used a function from ChrisKuoColumbiaU's GitHub repository for SHAPLEY values visualization
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alibekU/almaty_air_2020/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
